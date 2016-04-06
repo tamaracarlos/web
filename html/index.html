@@ -3,18 +3,28 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript">
+          function somarValores(){
+            var v1 = document.getElementById("valor1").value;
+            var v2 = document.getElementById("valor2").value;
+            var resultado = parseInt(v1) + parseInt(v2);
+            alert("O resultado é " + resultado + ".");
+            console.log (resultado);
+        }
+    </script>
 <title> Issue #1</title>
-</head>
 
+</head>
 <body>
   <h2 class="text-center">Função Somar</h2>
+
 <form>
   <!-- Valor 1 -->
   <div class="container">
       <div class="col-md-4 col-md-offset-4">
         <div class="form-group">
             <label for="valor1">Valor 1</label>
-            <input type=number class="form-control" id="valor1" placeholder="Digite um número">
+            <input type="text" class="form-control" id="valor1" placeholder="Digite um número">
         </div>
       </div>
   </div>
@@ -23,15 +33,16 @@
       <div class="col-md-4 col-md-offset-4">
         <div class="form-group">
           <label for="valor1">Valor 2</label>
-          <input type=number class="form-control" id="valor2" placeholder="Digite um número">
+          <input type="text" class="form-control" id="valor2" placeholder="Digite um número">
         </div>
       </div>
     </div>
-    <!-- Resultado -->
+    <!-- Somar -->
     <div class="container">
         <div class="col-md-4 col-md-offset-4">
           <div class="form-group">
-            <button type="submit" class="btn btn-default">Resultado</button>
+            <button id="somar" onclick="somarValores()" class="btn btn-default">Somar</button>
+            <p class="help-block" id="demo" onclick="myFunction()">Clique para verificar o resultado.</p>
           </div>
         </div>
       </div>
