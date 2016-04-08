@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css" media="screen">
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:60px;
+}
+</style>
+
+<title> WEB Básico </title>
+<!-- Cabeçalho -->
+<head>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a class="navbar-brand" href="index.php"> WEB Básico </a>
+    </div>
+
+    <!-- Tópicos -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Tópicos <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            </ul>
+        </li>
+      </ul>
+    <!-- Exercícios -->
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Exercícios <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="soma.php">Soma JavaScript</a></li>
+          </ul>
+        </li>
+      </ul>
+    <!-- Pesquisar -->
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Pesquisar">
+        </div>
+          <button type="submit" class="btn btn-default">Pesquisar</button>
+      </form>
+      </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+<body>
